@@ -1,0 +1,19 @@
+#include <iostream>
+int main() {
+  double pesos,reais,soles,dollars;
+  double conversion_rate_pesos,     conversion_rate_reais,conversion_rate_soles;
+  std::cout << "Please, enter thenumber of the Colombian Pesos you have laft \n";
+  std::cin>> pesos;
+  std::cout << "Please,enter the number of the Brazilizn Reais you have laft \n";
+  std::cin >> reais;
+  std::cout << "Please, entar the number of Peruvian Soles, you have left \n";
+  std::cin >> soles;
+  //Enter conversion rates for all three currencies
+   conversion_rate_pesos = 0.00032;
+   conversion_rate_reais = 0.27;
+   conversion_rate_soles = 0.3;
+
+   dollars=(conversion_rate_pesos*pesos)+(conversion_rate_reais*reais)+(conversion_rate_soles*soles);
+   std::cout << "So, the amount of dollars that you have left is  " << dollars << "dollars!";
+  return 0;
+}
